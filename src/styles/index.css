@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* { @apply antialiased; }
+
+.scrollbar-thin::-webkit-scrollbar { height: 6px; width: 6px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 9999px; }
+
+.fade-enter { opacity: 0; }
+.fade-enter-active { opacity: 1; transition: opacity 500ms ease-in; }
+.fade-exit { opacity: 1; }
+.fade-exit-active { opacity: 0; transition: opacity 500ms ease-out; }
